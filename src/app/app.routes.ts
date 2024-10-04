@@ -15,4 +15,11 @@ export const routes: Routes = [
         (m) => m.Problem2Component
       ),
   },
+  {
+    path: '**',
+    loadComponent: () =>
+      import('./pages/not-found/not-found.component').then(
+        (m) => m.NotFoundComponent
+      ),
+  },
 ];
