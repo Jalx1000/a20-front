@@ -1,1 +1,6 @@
-<p>problem-1 works!</p>
+<div class="chess-board">
+  <div *ngFor="let row of board; let rowIndex = index" class="row">
+    <div *ngFor="let cell of row; let colIndex = index" class="cell" [ngClass]="createBoard">
+    </div>
+  </div>
+</div>
